@@ -8,8 +8,11 @@ public class JumpPower : MonoBehaviour
 
     public Rigidbody rigidbody;
 
-    public void Start()
+    public void Update()
     {
-        rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+        }
     }
 }
