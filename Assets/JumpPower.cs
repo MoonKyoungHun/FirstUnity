@@ -6,7 +6,7 @@ public class JumpPower : MonoBehaviour
 {
     public int jumpPower;
 
-    Rigidbody rigidbody;
+    public Rigidbody rigidbody;
 
     public void Start()
     {
